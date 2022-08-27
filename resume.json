@@ -1,0 +1,54 @@
+{
+    "personal": {
+        "name": "Vivek Periannan",
+        "picture": "image ",
+        "email": "vivekperiannan2696@gmail.com",
+        "phone": "00919629193970",
+        "degree": "B.E-Automobile",
+        "summary": "Highly organized, efficient, hardworking and able to excel in any environment.",
+        "location": {
+            "address": "92/20,RV NAGAR ,SRKV POST",
+            "postalCode": "641020",
+            "city": "COIMBATORE",
+            "state": "TAMILNADU",
+            "country": "INDIA"
+        }
+
+    },
+    "work": [{
+        "company": "MERRYLAND INTERNATIONAL SCHOOL.LLC",
+        "position": "IT SUPPORT",
+
+        "startDate": "SINCE 04/10/2017",
+
+        "summary": "Providing technical support across the company this may be in person or over the phone"
+
+    }],
+
+    "education": [{
+        "institution": "TAMILNADU COLLEGE OF ENGINEERING",
+        "area": "TAMILNADU",
+        "studyType": "FULL-TIME",
+        "startyear": "2013",
+        "endyear": "2017",
+        "gpa": "7.5"
+
+    }],
+
+    "skills": [{
+        "name": "Programming Languages",
+        "level": "Entry level",
+        "keywords": [
+            "javascript,java"
+        ]
+    }],
+    "languages": [{
+        "language": "'TAMIL','ENGLISH','MALAYALAM'"
+    }],
+    "interests": [{
+        "name": "Sports",
+        "keywords": [
+            "Cricket, 'VOLLEYball', 'Golf'"
+        ]
+    }]
+}
