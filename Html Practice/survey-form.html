@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVEY-FORM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,300&display=swap" rel="stylesheet">
+    <style>
+    .checked{
+      color:orange;
+    }
+    .table-custom:nth-child(even){
+      background-color:#f1f1f1;
+    }
+    h6{
+      font-weight: 700;
+    }
+   h6::after{
+      content: "*";
+      color:red;
+    }
+    td{
+      text-align: center;
+      margin:10px;
+      padding:2px;
+      
+      
+    
+    }
+    table{
+      width:100%;
+      font-family: 'Roboto Serif', serif;
+    }
+  </style>
+</head>
+<body>
+    <form >
+        <div class="container-md border border-2">
+
+        <div class="row g-3">
+            <div>
+            <label for="fname"><h6>Name</h6> </label>
+        </div>
+            <div class="col">
+                
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email_id" class="form-label"><h6>Email</h6></label>
+            <input type="email" class="form-control" id="email_id" placeholder="name@example.com" required>
+          </div>
+          <h6>Your Experience with us</h6>
+          <div>
+            <span><i class="fa-solid fa-star checked p-1"></i></span>
+            <span ><i class="fa-solid fa-star checked p-1"></i></span>
+            <span ><i class="fa-solid fa-star checked p-1"></i></span>
+            <span ><i class="fa-solid fa-star p-1"></i></span>
+            <span ><i class="fa-solid fa-star p-1"></i></span>
+          </div>
+          <div class="p-2">Overall how would you rate your experience with us?</div>
+          <h6>How satisfied are you with</h6>
+          <table>
+            <tr class="table-custom ">
+            <td></td>
+              <td >Very unsatisfied</td>
+              <td> Unsatisfied</td>
+              <td>Neutral</td>
+              <td>satisfied</td>
+              <td>Very satisfied</td>
+              </tr>
+              <tr class="table-custom">
+                <td style="text-align:justify;width:250px;">Purchase</td>
+                <td><input type="radio" name="purchase" value="1"/></td>
+                <td><input type="radio" name="purchase" value="2"/></td>
+                <td><input type="radio" name="purchase" value="3"/></td>
+                <td><input type="radio" name="purchase" value="4"/></td>
+                <td><input type="radio" name="purchase" value="5"/></td>
+              </tr>
+              <tr class="table-custom">
+                <td style="text-align:justify">Service</td>
+                <td><input type="radio" name="service" value="1"/></td>
+                <td><input type="radio" name="service" value="2"/></td>
+                <td><input type="radio" name="service" value="3"/></td>
+                <td><input type="radio" name="service" value="4"/></td>
+                <td><input type="radio" name="service" value="5"/></td>
+              </tr>
+              <tr class="table-custom">
+                <td style="text-align:justify ;">Company Overall</td>
+                <td><input type="radio" name="companyoverall" value="1"/></td>
+                <td><input type="radio" name="companyoverall" value="2"/></td>
+                <td><input type="radio" name="companyoverall" value="3"/></td>
+                <td><input type="radio" name="companyoverall" value="4"/></td>
+                <td><input type="radio" name="companyoverall" value="5"/></td>
+              </tr>
+          </table>
+          <h6>How likely are you to</h6>
+          <div >
+          <table>
+            <tr class="table-custom" >
+              <td></td>
+                <td>Very Unlikely</td>
+                <td> Unlikely</td>
+                <td>Neutral</td>
+                <td>Likely</td>
+                <td>Very Likely</td>
+                </tr>
+                <tr class="table-custom">
+                  <td style="text-align:justify;width:250px;">Buy from us again</td>
+                  <td><input type="radio" name="buyagain" value="1"/></td>
+                  <td><input type="radio" name="buyagain" value="2"/></td>
+                  <td><input type="radio" name="buyagain" value="3"/></td>
+                  <td><input type="radio" name="buyagain" value="4"/></td>
+                  <td><input type="radio" name="buyagain" value="5"/></td>
+                </tr>
+                <tr class="table-custom">
+                  <td style="text-align:justify;">Recommend our products to others</td>
+                  <td><input type="radio" name="recommendproduct" value="1"/></td>
+                  <td><input type="radio" name="recommendproduct" value="2"/></td>
+                  <td><input type="radio" name="recommendproduct" value="3"/></td>
+                  <td><input type="radio" name="recommendproduct" value="4"/></td>
+                  <td><input type="radio" name="recommendproduct" value="5"/></td>
+                </tr>
+                <tr class="table-custom">
+                  <td style="text-align:justify">Recommend our Company to others</td>
+                  <td><input type="radio" name="recommendcompany" value="1"/></td>
+                  <td><input type="radio" name="recommendcompany" value="2"/></td>
+                  <td><input type="radio" name="recommendcompany" value="3"/></td>
+                  <td><input type="radio" name="recommendcompany" value="4"/></td>
+                  <td><input type="radio" name="recommendcompany" value="5"/></td>
+                </tr>
+
+          </table>
+        </div>
+          <span class="p-2" style="font-weight: 700;">Additional comments or suggestions<span>
+          <textarea  rows="5" cols="172" ></textarea>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary" style="font-family: 'Roboto Serif', serif;">Submit</button>
+          </div>
+        </div>
+        
+
+    </form>
+    
+</body>
+</html>
